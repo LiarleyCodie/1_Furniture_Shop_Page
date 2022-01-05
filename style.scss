@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Sen', sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    background-color: #8B9E70;
+}
+
+// ========= NAVBAR
+.navbar {
+    font-size: 1rem;
+    padding: 2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar .menu {
+    position: relative;
+
+    width: 2.6rem;
+    height: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.navbar .menu .bar::before {    // Top Bar
+    content: "";
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    border-radius: 1rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.navbar .menu .bar {    // Middle Bar
+    background-color: #fff;
+    height: 5px;
+    width: 70%;
+    border-radius: 1rem;
+    align-self: end;
+}
+
+.navbar .menu .bar::after {    // bottom Bar
+    content: "";
+    background-color: #fff;
+    height: 5px;
+    width: 30%;
+    border-radius: 1rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
