@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'Sen', sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.header {
+  width: 100%;
+  background-color: #8B9E70;
+}
+
+.navbar {
+  font-size: 1rem;
+  padding: 2rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .logo {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.navbar .menu {
+  position: relative;
+  width: 2.6rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.navbar .menu .bar::before {
+  content: "";
+  background-color: #fff;
+  height: 5px;
+  width: 100%;
+  border-radius: 1rem;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.navbar .menu .bar {
+  background-color: #fff;
+  height: 5px;
+  width: 70%;
+  border-radius: 1rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.navbar .menu .bar::after {
+  content: "";
+  background-color: #fff;
+  height: 5px;
+  width: 30%;
+  border-radius: 1rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
