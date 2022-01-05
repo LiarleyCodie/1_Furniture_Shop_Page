@@ -154,4 +154,139 @@ body {
   -webkit-transition: width 300ms ease;
   transition: width 300ms ease;
 }
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30%;
+}
+
+.button {
+  background-color: #313415;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.buy.button {
+  width: 86%;
+  height: 3rem;
+  color: white;
+  margin-bottom: 1.1rem;
+}
+
+.explore.button {
+  width: 86%;
+  height: 3rem;
+  background-color: #fff;
+  border: 2px solid #818181;
+  color: #818181;
+}
+
+.article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 2.4rem;
+  padding: 0 2rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.article h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.article p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #818181;
+}
+
+.scroll-down {
+  position: absolute;
+  background: #8A9973;
+  width: 3rem;
+  height: 3rem;
+  bottom: 3%;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.scroll-down .bar {
+  width: 40%;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
+  border-radius: 1rem;
+  -webkit-animation: scrollDown 1s ease infinite;
+          animation: scrollDown 1s ease infinite;
+}
+
+.scroll-down .bar:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(0.5rem, 0.5rem);
+          transform: rotate(-45deg) translate(0.5rem, 0.5rem);
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    bottom: 40%;
+  }
+  34% {
+    bottom: 45%;
+  }
+  76% {
+    bottom: 35%;
+  }
+  100% {
+    bottom: 40%;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    bottom: 40%;
+  }
+  34% {
+    bottom: 45%;
+  }
+  76% {
+    bottom: 35%;
+  }
+  100% {
+    bottom: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
